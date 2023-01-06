@@ -8,6 +8,7 @@ for i in range(0, len(aList)):
     fList.append(aList[i][1])
 fsList = sorted(fList)
 for i in range(0, len(fsList)):
-    if fsList[i] == aList[i][1]:
-        finalList.append(aList[i])
+    for j in range(0, len(fsList)):
+        if fsList[i] == aList[j][1]:
+            finalList.append(aList[j])
 print(finalList)
